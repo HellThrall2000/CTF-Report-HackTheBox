@@ -3,11 +3,16 @@ Capturing flag in a machine using Kali Linux and its tools. Vulnerable machine I
 ## Tunneling to the network of victim machine 
 ```
 openvpn starting_point_hellthrall.ovpn
-```
+```![1](https://user-images.githubusercontent.com/86112651/176484822-a0a146e0-3bf8-4579-894d-b65f927c4be6.png)
+
+
 ## Scanning for open ports using N-map
 ```
  nmap -sS -p- -sV -sC -T5 -v 10.129.38.135
 ```
+![image](https://user-images.githubusercontent.com/86112651/176484980-7b9d4178-5a1a-4401-9c0e-aeea8eb08308.png)
+![image](https://user-images.githubusercontent.com/86112651/176485044-ff3baba3-d1ee-4a5d-a070-16e497ea9e74.png)
+
 
 ## Exploiting website vulnerabilities
 ![unika](https://user-images.githubusercontent.com/86112651/176470686-dc3e64af-4197-42ea-b3fc-6a460172a1e8.gif)
@@ -15,6 +20,8 @@ Editing etc/hosts :
 ```
 nano etc/hosts
 ```
+![image](https://user-images.githubusercontent.com/86112651/176485190-bd9e20a7-da64-4f10-b995-210d9a6a6f2c.png)
+
 ![image](https://user-images.githubusercontent.com/86112651/176475712-0a9aef33-159b-4c28-a935-9f7b170600d2.png)
 Checking for Remote File Inclusion vulnerability :
 ![unika2](https://user-images.githubusercontent.com/86112651/176477254-05e30cbd-379f-48d6-acca-94142367e01d.gif)
