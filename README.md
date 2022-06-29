@@ -3,8 +3,8 @@ Capturing flag in a machine using Kali Linux and its tools. Vulnerable machine I
 ## Tunneling to the network of victim machine 
 ```
 openvpn starting_point_hellthrall.ovpn
-```![1](https://user-images.githubusercontent.com/86112651/176484822-a0a146e0-3bf8-4579-894d-b65f927c4be6.png)
-
+```
+![1](https://user-images.githubusercontent.com/86112651/176484822-a0a146e0-3bf8-4579-894d-b65f927c4be6.png)
 
 ## Scanning for open ports using N-map
 ```
