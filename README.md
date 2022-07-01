@@ -1,12 +1,24 @@
-# CTF-Report-HackTheBox
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Tunneling](#tunelling)
+* [Scanning](#scanning)
+* [Website check](#website-check)
+
+## General-Info
 Capturing flag in a machine using Kali Linux and its tools. Vulnerable machine I.P. provided by HackTheBox.
-## Tunneling to the network of victim machine 
+## Technologies
+Download and install vmware workstation player from : https://www.vmware.com/in/products/workstation-player.html
+Download Kali Linux VMware runable file : https://www.kali.org/get-kali/#kali-virtual-machines
+## Tunneling 
+Tunneling to the network of victim machine
 ```
 openvpn starting_point_hellthrall.ovpn
 ```
 ![1](https://user-images.githubusercontent.com/86112651/176484822-a0a146e0-3bf8-4579-894d-b65f927c4be6.png)
 
-## Scanning for open ports using N-map
+## Scanning
+We will scan for open vulnerable ports using N-map
 ```
  nmap -sS -p- -sV -sC -T5 -v 10.129.38.135
 ```
@@ -14,7 +26,8 @@ openvpn starting_point_hellthrall.ovpn
 ![image](https://user-images.githubusercontent.com/86112651/176485044-ff3baba3-d1ee-4a5d-a070-16e497ea9e74.png)
 
 
-## Exploiting website vulnerabilities
+## Website check
+Checking and exploiting website vulnerabilities
 Checking at port 80:
 ![unika](https://user-images.githubusercontent.com/86112651/176470686-dc3e64af-4197-42ea-b3fc-6a460172a1e8.gif)
 Editing etc/hosts :
